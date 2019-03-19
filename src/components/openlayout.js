@@ -23,11 +23,6 @@ export default ({ children }) => (
             pressure
             humidity
           }
-          dt
-          wind {
-            speed
-            deg
-          }
           name
         }
       }`
@@ -41,7 +36,6 @@ export default ({ children }) => (
           <tr>
             <th>City</th>
             <th>Latitude | Longitude</th>
-            <th>DT</th>
             <th>Temperature (F&deg;)</th>
             <th>Humidity</th>
             <th>Visibility</th>
@@ -49,7 +43,6 @@ export default ({ children }) => (
           <tr>
             <td>{data.openWeather.name}</td>
             <td>{data.openWeather.coord.lat} | {data.openWeather.coord.lon}</td>
-            <td>{data.openWeather.dt}</td>
             <td>{data.openWeather.main.temp}</td>
             <td>{data.openWeather.main.humidity}%</td>
             <td>{data.openWeather.visibility}</td>

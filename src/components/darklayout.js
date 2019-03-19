@@ -18,16 +18,13 @@ export default ({ children }) => (
             timezone
             locationName
           currently {
-            time
             summary
             icon
             nearestStormDistance
             precipIntensity
             precipProbability
             temperature
-            apparentTemperature
             dewPoint
-            humidity
             pressure
             windSpeed
             windGust
@@ -45,24 +42,22 @@ export default ({ children }) => (
       <Link to="/" style={{ float: `right`}}>Home</Link>
       {children}
       <table>
+        <thead>
           <tr>
             <th>Summary</th>
-            <th>Time</th>
-            <th>Latitude | Longitude</th>
+            <th>Latitude & Longitude</th>
             <th>Currently Temperature (F&deg;)</th>
-            <th>Currently Apparent Temperature (F&deg;)</th>
-            <th>Humidity</th>
             <th>Cloud Cover</th>
           </tr>
-          <tr>
+          </thead>
+          <tbody>
+            <tr>
             <td>{data.weatherData.currently.summary}</td>
-            <td>{data.weatherData.currently.time}</td> 
             <td>{data.weatherData.latitude} | {data.weatherData.longitude}</td>
             <td>{data.weatherData.currently.temperature}&deg;F</td>
-            <td>{data.weatherData.currently.apparentTemperature}&deg;F</td>
-            <td>{data.weatherData.currently.humidity}</td>
             <td>{data.weatherData.currently.cloudCover}</td>
           </tr>
+          </tbody>
         </table>
     </div>
   )}

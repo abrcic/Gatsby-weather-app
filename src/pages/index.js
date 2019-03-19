@@ -6,8 +6,10 @@ import Header from "../components/header"
 export default () => (
   <div id="main">
     <Header headerText="Gatsby Weather App" />
-    <Link to="/"><div class="button">Home</div></Link>
-    <Link to="/darkabout"><div class="button mx">DarkSky Weather</div></Link>
-    <Link to="/openabout"><div class="button">OpenWeather Weather</div></Link>
+    <Link to="/"><div className="button">Home</div></Link>
+    <br></br>
+    <Link to="/darkabout"><div className="button mx">DarkSky Weather</div></Link>
+    <br></br>
+    <Link to="/openabout"><div className="button">OpenWeather Weather</div></Link>
   </div>
 )

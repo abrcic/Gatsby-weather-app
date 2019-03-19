@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-openweathermap',
       options: {
-        apikey: '504b868212eef251b7a3a88708220b57',
+        apikey: '1cd2365fe3b4e07fb62e997762c16e5a',
         location: 'Chicago',
         units: 'imperial',
         type: 'weather'
@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-darksky',
       options: {
-        key: '88c2495035582f4af23f687e0f8ece07',
+        key: '38a71ae607f270345874689c5a87cfcf',
         latitude: '43.03',
         longitude: '-87.74',
         exclude: ['minutely']

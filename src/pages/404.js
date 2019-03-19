@@ -5,7 +5,7 @@ export default () => (
   <div>
     <h1>404.html</h1>
     <p>
-     Hi! Don't know what you did, but it didn't work!
+     Hi! Don't know what you did, but it didn't work! So stop doing that.
     </p>
     <ul>
     <li><Link to="/">Home</Link> Start All Over! </li> 
